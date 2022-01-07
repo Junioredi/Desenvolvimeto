@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'roboto' sans-serif;
+  /*font-family: 'Roboto', sans-serif;
+  font-family: 'The Nautigal', cursive;*/
+}
+:root {
+}
+.cabecalho {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 40px;
+  width: 100%;
+  padding: 40px;
+  text-align: center;
+  background-color: aquamarine;
+}
+
+.llogin {
+  display: flex;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  padding: 20px;
+  height: 400px;
+  width: 350px;
+  background-color: rgb(166, 235, 235);
+}
+.llogin-name {
+  height: 40px;
+  width: 300px;
+  background-color: rgb(163, 12, 235);
+}
+.llogin-senha {
+  height: 40px;
+  width: 300px;
+  background-color: rgb(163, 12, 235);
+}
+.llogin-emviar {
+  height: 40px;
+  width: 300px;
+  background-color: rgb(163, 12, 235);
+}
