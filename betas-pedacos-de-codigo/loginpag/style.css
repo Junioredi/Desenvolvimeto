@@ -3,10 +3,15 @@
   padding: 0;
   text-decoration: none;
   font-family: 'roboto' sans-serif;
+
+  background-image: linear-gradient(25deg cyan, yellow);
+
   /*font-family: 'Roboto', sans-serif;
   font-family: 'The Nautigal', cursive;*/
 }
-:root {
+.body {
+  background-color: linear-gradient(45deg cyan, yellow);
+  background-image: linear-gradient(25deg cyan, yellow);
 }
 .cabecalho {
   display: flex;
@@ -17,7 +22,6 @@
   width: 100%;
   padding: 40px;
   text-align: center;
-  background-color: aquamarine;
 }
 
 .llogin {
