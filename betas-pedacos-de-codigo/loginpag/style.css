@@ -15,23 +15,25 @@
 }
 .cabecalho {
   display: flex;
-  align-items: flex-end;
   flex-direction: row;
-  justify-content: space-between;
-  height: 40px;
-  width: 100%;
-  padding: 40px;
+
   text-align: center;
+  background-color: aqua;
+}
+.cabecalho div {
+  margin: 10px;
+  padding: 10px;
+  background-color: bisque;
 }
 
 .llogin {
   display: flex;
-  grid-template-columns: 1fr;
-  justify-content: center;
+  flex-direction: center;
   padding: 20px;
   height: 400px;
   width: 350px;
   background-color: rgb(166, 235, 235);
+  border-radius: 20px;
 }
 .llogin-name {
   height: 40px;
