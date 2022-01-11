@@ -1,52 +1,25 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   text-decoration: none;
-  font-family: 'roboto' sans-serif;
-
-  background-image: linear-gradient(25deg cyan, yellow);
 
   /*font-family: 'Roboto', sans-serif;
   font-family: 'The Nautigal', cursive;*/
 }
-.body {
-  background-color: linear-gradient(45deg cyan, yellow);
-  background-image: linear-gradient(25deg cyan, yellow);
-}
-.cabecalho {
+body {
+  background: linear-gradient(45deg, #ffcccc 0%, #99ccff 100%);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  max-width: 100vw;
   display: flex;
-  flex-direction: row;
-
-  text-align: center;
-  background-color: aqua;
+  align-items: center;
+  justify-content: center;
 }
-.cabecalho div {
-  margin: 10px;
-  padding: 10px;
-  background-color: bisque;
-}
-
 .llogin {
-  display: flex;
-  flex-direction: center;
-  padding: 20px;
-  height: 400px;
-  width: 350px;
-  background-color: rgb(166, 235, 235);
+  background-color: cornsilk;
+  max-width: 350px;
+  min-height: 40vh;
+  padding: 2rem;
   border-radius: 20px;
-}
-.llogin-name {
-  height: 40px;
-  width: 300px;
-  background-color: rgb(163, 12, 235);
-}
-.llogin-senha {
-  height: 40px;
-  width: 300px;
-  background-color: rgb(163, 12, 235);
-}
-.llogin-emviar {
-  height: 40px;
-  width: 300px;
-  background-color: rgb(163, 12, 235);
 }
