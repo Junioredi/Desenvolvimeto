@@ -31,7 +31,11 @@ img {
 
 /*------------Layout--------------*/
 .menu{
+  display: flexbox;
   height: 3rem;
-  background: var(--base-color);
+  background-color:aquamarine;
+
+}
+.conteudo{
 
 }
