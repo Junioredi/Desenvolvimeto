@@ -42,6 +42,9 @@ img {
   border-left: 3rem;
 
 }
+.menu logotxt{
+
+}
 .menu-btm{
   display: flex;
   
@@ -51,6 +54,10 @@ img {
  width: 2rem;
  height: 2rem;
 }
+.menu a{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
 .conteudo{
   display: flexbox;
   background-color: rgb(255, 130, 222);
@@ -58,12 +65,14 @@ img {
   flex-direction: row;
   align-items: center;
 
- height: 49rem;
+ height: auto;
 }
-.conteudo h1{
+.conteudo-text{
+  flex-direction: column;
 
 }
 .conteudo img{
-  width: 80rem;
-  height: 70rem;
+  width: 60rem;
+  height: auto;
+
 }
