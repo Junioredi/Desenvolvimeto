@@ -32,10 +32,38 @@ img {
 /*------------Layout--------------*/
 .menu{
   display: flexbox;
-  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  height: 4.2rem;
   background-color:aquamarine;
+  border-left: 3rem;
 
 }
+.menu-btm{
+  display: flex;
+  
+  justify-content: space-around;
+}
+.menu img{
+ width: 2rem;
+ height: 2rem;
+}
 .conteudo{
+  display: flexbox;
+  background-color: rgb(255, 130, 222);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 
+ height: 49rem;
+}
+.conteudo h1{
+
+}
+.conteudo img{
+  width: 80rem;
+  height: 70rem;
 }
