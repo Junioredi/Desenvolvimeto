@@ -58,9 +58,24 @@ img {
   padding-left: 2rem;
   padding-right: 2rem;
 }
-.conteudo{
+
+
+
+#header{
   background-color: rgb(255, 130, 222);
-  height: auto;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+}
+.conteudo{
+  padding: 3rem;
+  background-color: rgb(144, 51, 119);
+  width: 99%;
+  border-radius: 10px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -93,3 +108,4 @@ padding-top: 1rem;
   height: auto;
 
 }
+
