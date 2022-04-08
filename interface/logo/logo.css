@@ -1,0 +1,39 @@
+*{
+  padding: 0rem;
+  margin: 0rem;
+  font-size: 100%;
+  font-family: 'Times New Roman', Times, serif;
+  box-sizing: border-box;
+  text-decoration: none;
+ 
+  
+
+}
+.fundo {
+  background: linear-gradient(45deg, #ffcccc 0%, #99ccff 100%);
+  background-repeat: no-repeat;
+}
+.menu {
+  display: flex;
+  justify-content: center;  /*eixo X  vertical*/
+  align-items: flex-start;  /*eixo Y  horizontal*/
+  flex-direction: column;
+  width: 100vw; 
+
+}
+
+.menu img{
+  width: 4rem;
+  height: 4rem;
+  border-radius: 7px;
+  background: linear-gradient(45deg, #ffcccc 0%, #99ccff 100%);
+  opacity: 0,9;
+  padding: 0;
+  margin: 10px 10px;
+
+}
+.menu h1{
+  background: linear-gradient(45deg, #ffcccc 0%, #99ccff 100%);
+  font-size: 15pt;
+  font-weight: bold;
+}

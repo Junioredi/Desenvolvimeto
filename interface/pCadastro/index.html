@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--<link rel="stylesheet" type="text/css" href="pCadastro.css" />-->
+    <title>Cadastro</title>
+    <style>
+      margin: 0;
+      * {
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+
+        /*font-family: 'Roboto', sans-serif;
+  font-family: 'The Nautigal', cursive;*/
+      }
+      body {
+        background: linear-gradient(45deg, #ffcccc 0%, #99ccff 100%);
+        background-repeat: no-repeat;
+        margin: 0rem;
+        padding: 0rem;
+      }
+
+      /*layout*/
+
+      .main-cadastro {
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(5deg, #ffcccc 0%, #99ccff 100%);
+        display: flex;
+        justify-content: center; /*eixo X */
+        align-items: center; /* eixo Y */
+      }
+      .left-cadastro {
+        width: 50vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center; /*eixo X */
+        align-items: center; /* eixo Y */
+        flex-direction: column;
+      }
+
+      .left-cadastro > h1 {
+        color: #55655e;
+      }
+      .right-cadastro {
+        width: 50vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center; /*eixo X */
+        align-items: center; /* eixo Y */
+        flex-direction: column;
+      }
+      .right-cadastro > h1 {
+        color: #55655e;
+        font-weight: 800;
+        margin: 0;
+      }
+      .card-cadastro {
+        width: 60%;
+        display: flex;
+        justify-content: center; /*eixo X */
+        align-items: center; /* eixo Y */
+        flex-wrap: wrap;
+        background: #8875a6d6;
+        padding: 1rem 1rem;
+        border-radius: 20px;
+        box-shadow: 0px 10px 40px #ffcccc;
+      }
+
+      .textfild {
+        display: flex;
+        justify-content: center; /*eixo X */
+        align-items: flex-start; /* eixo Y */
+        flex-direction: column;
+        margin: 0, 9rem 0, 9rem;
+        padding: 0rem 2rem;
+      }
+
+      .textfild > input {
+        width: 100%;
+        border: none;
+        border-radius: 10px;
+        padding: 15px;
+        background: #51416bd6;
+        font-size: 12pt;
+        box-shadow: 0px 10px 40px #ffcccc;
+        outline: none;
+        box-sizing: border-box;
+      }
+
+      .textfild > label {
+        color: white;
+        margin-bottom: 10px;
+      }
+      .textfild input::placeholder {
+        color: #f0ffff94;
+      }
+
+      .btn-cadastro {
+        display: flex;
+        justify-content: center; /*eixo X */
+        align-items: flex-end; /* eixo Y */
+        flex-direction: row;
+        width: 100%;
+      }
+      .btn-cadastro > a {
+        padding-left: 1rem;
+      }
+      .btn-cadastro > a button {
+        width: 100%;
+        padding: 10px 0px;
+        margin: 25px;
+        border: none; /*tira borda invisivel do html*/
+        border-radius: 10px;
+        outline: none; /*tira linha invisivel do html*/
+        text-transform: uppercase;
+        font-weight: 800; /*fonte Bold*/
+        letter-spacing: 3px;
+        color: #99ccff;
+        cursor: pointer;
+      }
+
+      @media (max-width: 900px) {
+        .main-cadastro {
+          width: 100vw;
+          height: 100vh;
+          background: linear-gradient(5deg, #ffcccc 0%, #99ccff 100%);
+          display: flex;
+          justify-content: center; /*eixo X */
+          align-items: center; /* eixo Y */
+          flex-direction: column;
+        }
+        .left-cadastro {
+          width: 100vw;
+          height: 50vh;
+          display: flex;
+          justify-content: center; /*eixo X */
+          align-items: center; /* eixo Y */
+          flex-direction: column;
+        }
+
+        .right-cadastro {
+          width: 100vw;
+          display: flex;
+          justify-content: center; /*eixo X */
+          align-items: center; /* eixo Y */
+          flex-direction: column;
+        }
+
+        .card-cadastro {
+          width: 60%;
+          display: flex;
+          justify-content: center; /*eixo X */
+          align-items: center; /* eixo Y */
+          flex-wrap: wrap;
+          background: #8875a6d6;
+          padding: 1rem 1rem;
+          border-radius: 20px;
+          box-shadow: 0px 10px 40px #ffcccc;
+        }
+
+        .btn-cadastro a {
+          display: flex;
+          justify-content: center; /*eixo X */
+          align-items: flex-end; /* eixo Y */
+          flex-direction: row;
+          width: 50%;
+          padding: 1.1rem 1rem;
+          margin: 0vw 0vh;
+        }
+      }
+
+      @media (min-width: 1200px) {
+        .card-cadastro {
+          width: 60%;
+          display: flex;
+          justify-content: center; /*eixo X */
+          align-items: center; /* eixo Y */
+          flex-wrap: wrap;
+          background: #8875a6d6;
+          padding: 1rem 1rem;
+          border-radius: 20px;
+          box-shadow: 0px 10px 40px #ffcccc;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- estrutura basica de login   -->
+    <div class="main-cadastro">
+      <div class="left-cadastro">
+        <h1>Faça login<br />No melhor site de compras do mundo</h1>
+      </div>
+      <div class="right-cadastro">
+        <h1>Cadastro</h1>
+        <div class="card-cadastro">
+          <div class="textfild">
+            <label for="usuario">Nome</label>
+            <input type="text" name="usuario" placeholder="usuario" />
+          </div>
+
+          <div class="textfild">
+            <label for="usuario">Numero</label>
+            <input type="text" name="Numero" placeholder="Numero" />
+          </div>
+
+          <div class="textfild">
+            <label for="Email">E-mail</label>
+            <input type="text" name="usuario" placeholder="E-mail" />
+          </div>
+
+          <div class="textfild">
+            <label for="usuario">Senha</label>
+            <input type="password" name="usuario" placeholder="senha" />
+          </div>
+
+          <div class="btn-cadastro">
+            <a link href="/betas-pedacos-de-codigo/pLogin/index.html">
+              <button id="btn-cadastre-se">Logar</button></a
+            >
+            <a link href="#"> <button id="btn-login">Enviar</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
