@@ -1,0 +1,205 @@
+*{
+  padding: 0rem;
+  margin: 0rem;
+  font-size: 100%;
+  font-family: 'Times New Roman', Times, serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  background-repeat: no-repeat;
+
+}
+body{
+  background: linear-gradient(45deg, #ffcccc 0%, #99ccff 100%);
+  background-repeat: no-repeat;
+}
+
+
+/*layout*/
+
+.main-login{
+  width: 100vw;
+  height: 100vh;
+  
+  display: flex;
+  justify-content: center; /*eixo X */
+  align-items: center;    /* eixo Y */
+
+}
+.menu {
+  display: flex;
+  justify-content: center;  /*eixo X  vertical*/
+  align-items: flex-start;  /*eixo Y  horizontal*/
+  flex-direction: column;
+  width: 4rem; 
+  height: 10vh;
+
+}
+
+.menu img{
+  width: 4rem;
+  height: 4rem;
+  border-radius: 7px;
+  background: linear-gradient(45deg, #ffcccc 0%, #99ccff 100%);
+  opacity: 0,9;
+  padding: 10px;
+  margin: 10px 10px;
+
+}
+.menu h1{
+  background: linear-gradient(45deg, #ffcccc 0%, #99ccff 100%);
+  font-size: 15pt;
+  font-weight: bold;
+}
+.left-login{
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center; /*eixo X */
+  align-items: center;    /* eixo Y */
+  flex-direction: column;
+}
+
+.left-login > h1{
+  color: #55655e;
+}
+.right-login{
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center; /*eixo X */
+  align-items: center;    /* eixo Y */
+  flex-direction: column; 
+}
+.right-login > h1 {
+  color: #55655e;
+  font-weight: 800;
+  margin: 0;
+}
+
+.card-login{
+  width: 60%;
+  display: flex;
+  justify-content: center; /*eixo X */
+  align-items: center;    /* eixo Y */
+  flex-wrap: wrap;
+  background: #8875a6d6;
+  padding: 1rem 1rem;
+  border-radius: 20px;
+  box-shadow: 0px 10px 40px  #ffcccc;
+}
+
+
+.textfild{
+  display: flex;
+  justify-content: center; /*eixo X */
+  align-items: flex-start;    /* eixo Y */
+  flex-direction: column;
+  margin: 10px 0px;
+}
+
+.textfild > input{
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  background: #51416bd6;
+  font-size: 12pt;
+  box-shadow: 0px 10px 40px  #ffcccc;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.textfild > label{
+  color: white;
+  margin-bottom:10px;
+}
+.textfild input::placeholder{
+  color: #f0ffff94;
+}
+
+.btn-login{
+  display: flex;
+  justify-content: center; /*eixo X */
+  align-items:flex-end;    /* eixo Y */
+  flex-direction: row;
+  width: 100%;  
+  padding: 1.1rem 1rem;
+}
+
+.btn-login > a{
+  padding-left: 2rem;
+}
+.btn-login > a button{
+  width: 100%;
+  padding: 1.1rem 1rem;
+  margin: 1rem 0rem;
+  border: none; /*tira borda invisivel do html*/
+  border-radius: 10px;
+  outline: none; /*tira linha invisivel do html*/
+  text-transform: uppercase;
+  font-weight: 800;/*fonte Bold*/
+  letter-spacing: 3px;
+  color: #99ccff;
+  cursor: pointer;
+}
+
+/*Adaptaçãp para telas pequenas*/
+@media(max-width:900px) {
+  .main-login{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(5deg, #ffcccc 0%, #99ccff 100%);
+    display: flex;
+    justify-content: center; /*eixo X */
+    align-items: center;    /* eixo Y */
+    flex-direction:column;
+
+  }
+
+  .right-login{
+    width: 80vw;
+    display: flex;
+    justify-content: center; /*eixo X */
+    align-items: center;  /* eixo Y */
+    flex-direction: column; 
+  }
+
+  .card-login{
+    width:100%;
+    display: flex;
+    justify-content: center; /*eixo X */
+    align-items: center;    /* eixo Y */
+    flex-wrap: wrap;
+    background: #8875a6d6;
+    padding: 1rem 1rem;
+   
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px  #ffcccc;
+  }
+
+  .btn-login{
+    display: flex;
+    justify-content: center; /*eixo X */
+    align-items:flex-end;    /* eixo Y */
+    flex-direction: row;
+    width: 50%;  
+    padding: 1.1rem 1rem;
+  }
+}
+
+/*Adaptaçãp para telas grandes*/
+
+@media(min-width:1024px){
+  .card-login{
+    width: 50%;
+    display: flex;
+    justify-content: center; /*eixo X */
+    align-items: center;    eixo Y 
+    flex-wrap: wrap;
+    background: #8875a6d6;
+    padding: 1rem 1rem;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px  #ffcccc;
+  }
+
+}
