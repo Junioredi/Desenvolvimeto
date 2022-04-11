@@ -1,0 +1,132 @@
+/*Reset
+font-family: 'Roboto', sans-serif;
+font-family: 'The Nautigal', cursive;
+
+*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+:root {
+  --header-height: 4.5rem;
+
+  /* colors */
+  --hue: 159;
+  /* HSL color mode */
+  --base-color: hsl(var(--hue) 36% 57%);
+  --base-color-second: hsl(var(--hue) 65% 88%);
+  --base-color-alt: hsl(var(--hue) 57% 53%);
+  --title-color: hsl(var(--hue) 41% 10%);
+  --text-color: hsl(0 0% 46%);
+  --text-color-light: hsl(0 0% 98%);
+  --body-color: hsl(0 0% 98%);
+}
+/*body {
+  font: 400 1rem 'DM Sans', sans-serif;
+  color: var(--text-color);
+  background: var(--body-color);
+  -webkit-font-smoothing: antialiased;
+}*/
+
+body {
+  position: relative;
+
+  background: linear-gradient(to top left, #00ffcc 0%, #006699 100%);
+}
+// Small devices (landscape phones, 400px and up)
+@media (min-width: 400px) {
+  .menu {
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .portifolio {
+    display: flex;
+    flex-direction: column;
+  }
+  .portifolio img {
+    display: flex;
+    flex-direction: column;
+    flex: 50%;
+    width: 19rem;
+    height: 12rem;
+    border-radius: 60px;
+  }
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+}
+
+/*layoute */
+
+.menu {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  height: 2.9rem;
+  width: 100%;
+  background: linear-gradient(to top left, #00ffcc 0%, #006699 100%);
+  padding: 2.1rem;
+}
+.menu nav a {
+  font-family: 'Roboto', cursive;
+  font-size: 4vw;
+  color: var(--title-color);
+  padding: 20px;
+}
+
+.sobre {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-top: 0.4px solid #fff2e7;
+  margin-bottom: 48px;
+  padding: 30px;
+}
+
+.sobre img {
+  width: 180px;
+  height: 200px;
+  padding: 10px;
+  border-radius: 100px;
+}
+
+.sobre h1 {
+  font-weight: 400;
+  font-size: 60px;
+}
+.sobre p {
+  text-justify: center;
+}
+
+.portifolio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-top: 0.4px solid #fff2e7;
+}
+.portifolio-text h2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 40px;
+  padding: 20px;
+}
+
+.portifolio img {
+  width: 19rem;
+  height: 12rem;
+  padding: 1.3rem;
+  border-radius: 3rem;
+}
+.portifolio img:hover {
+  width: 20rem;
+  height: 13rem;
+  padding: 2rem;
+}
